@@ -1,13 +1,11 @@
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import path from "path";
-// import nodePolyfills from 'rollup-plugin-polyfill-node';
+import react from "@vitejs/plugin-react";
 import { NodeGlobalsPolyfillPlugin } from "@esbuild-plugins/node-globals-polyfill"
 import NodeModulesPolyfills from '@esbuild-plugins/node-modules-polyfill'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [react()],
   optimizeDeps: {
     esbuildOptions: {
         // Node.js global to browser globalThis

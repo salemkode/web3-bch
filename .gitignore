@@ -4,3 +4,6 @@ dist
 dist-ssr
 *.local
 .yalc
+.bs.js
+.vscode
+lib
